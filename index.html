@@ -1,25 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login (Practice)</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#fafafa;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            width:350px;
+        }
+
+        .login-box{
+            background:#fff;
+            border:1px solid #dbdbdb;
+            padding:40px;
+            text-align:center;
+        }
+
+        h1{
+            font-family:cursive;
+            font-size:42px;
+            margin-bottom:30px;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            margin:6px 0;
+            border:1px solid #dbdbdb;
+            border-radius:4px;
+            background:#fafafa;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            margin-top:12px;
+            background:#0095f6;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:15px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1877f2;
+        }
+
+        .divider{
+            margin:20px 0;
+            color:#8e8e8e;
+            font-size:14px;
+        }
+
+        .facebook{
+            color:#385185;
+            font-weight:bold;
+            text-decoration:none;
+        }
+
+        .forgot{
+            display:block;
+            margin-top:15px;
+            text-decoration:none;
+            color:#00376b;
+            font-size:13px;
+        }
+
+        .signup{
+            margin-top:12px;
+            background:#fff;
+            border:1px solid #dbdbdb;
+            padding:20px;
+            text-align:center;
+        }
+
+        .signup a{
+            color:#0095f6;
+            text-decoration:none;
+            font-weight:bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
 
-    <form>
-        <label>Name:</label><br>
-        <input type="text"><br><br>
+<div class="container">
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+    <div class="login-box">
 
-        <label>Message:</label><br>
-        <textarea rows="5" cols="30"></textarea><br><br>
+        <h1>Instagram</h1>
 
-        <button type="submit">Send</button>
-    </form>
+        <form>
+            <input type="text" placeholder="Phone number, username, or email" required>
 
-    <br>
-    <a href="index.html">Back to Home</a>
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <a href="#" class="facebook">Log in with Facebook</a>
+
+        <a href="#" class="forgot">Forgot password?</a>
+
+    </div>
+
+    <div class="signup">
+        Don't have an account?
+        <a href="#">Sign up</a>
+    </div>
+
+</div>
+
 </body>
 </html>
